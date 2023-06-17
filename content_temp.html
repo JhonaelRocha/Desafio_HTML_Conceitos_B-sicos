@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Geral HTML</title>
+    <style>
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        table {
+            border:solid 0.5px black;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+        }
+        table thead th {
+            background-color: rgb(253, 118, 51);
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: rgb(229, 229, 229);
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: rgb(229, 229, 229);
+        }
+
+        table tbody tr:hover td {
+            background-color: rgb(155, 155, 255);
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="base.css">
+    <link rel="html" href="filas.html">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <table cellspacing="40" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th>Menu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="content_temp.html">Início</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="horarios_temp.html">Horários</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="formulario_temp.html">Cadastro</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="endereços_temp.html">Endereços</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="sobre_temp.html">Sobre</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img width="100" src="hospital.png" alt="">
+                <h1>Clínica Geral HTML</h1>
+                <!-- Aqui vai o seu header -->
+            </div>
+
+            <div class="content">
+                
+                <iframe src="content.html" frameborder="0"
+                width="1025" height="375"></iframe>
+                
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+
+            <div class="footer">
+                <br>
+                Telefone: (00) 1234-5678<br> Email: clinicageralhtml@email.com
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

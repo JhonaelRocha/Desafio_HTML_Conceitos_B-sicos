@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereços</title>
+    <style>
+        table {
+            text-align:center;
+            border:solid 0.5px black;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.29);
+            box-sizing: 1000px;
+        }
+
+        table thead th {
+            background-color: rgb(112, 234, 68);
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: rgb(229, 229, 229);
+        }
+
+        table tbody tr:hover td {
+            background-color: rgb(155, 155, 255);
+            cursor: pointer;
+        }
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        fieldset {
+            margin: 15px 0;
+            border-radius: 30px;
+            border-color: rgba(0, 255, 21, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Identifique-se</legend>
+            <div class="row">
+                <label>Nome:</label><input type="text" name="nome">
+                <label>Celular:</label><input type="number" name="celular"><br>
+                <label>E-mail:</label><input type="email" name="email">
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informações do Contato</legend>
+            <div class="row">
+                <label>Assunto:</label><input type="text" name="assunto"><br>
+                <label>Mensagem:</label><textarea name="mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <div class="row">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+
+    <!-- O summary é para Leitor de Tela para Cegos -->
+    <table width="350" cellspacing="0" align="center" 
+    cellpadding="10"
+        summary="Tabela de Endereços da Clínica Geral HTML">
+        <!-- Título da Tabela -->
+        <caption>Tabela de Endereços</caption>
+        <!-- Topo da Tabela -->
+        <thead>
+            <tr>
+                <th colspan="3">Endereços</th>
+            </tr>
+            <tr>
+                <th title="Cidade">Cidade</th>
+                <th title="Rua">Rua</th>
+                <th title="Número">Número</th>
+            </tr>
+        </thead>
+        <!-- Corpo da Tabela -->
+        <tbody>
+
+            <tr id=1>
+                <td>Fortaleza</td>
+                <td>Jorge Martins</td>
+                <td>18</td>
+            </tr>
+            <tr id=2>
+                <td>Belo Horizonte</td>
+                <td>Cascata Bela</td>
+                <td>214</td>
+            </tr>
+            <tr id=3>
+                <td>Rio de Janeiro</td>
+                <td>Roll Principal</td>
+                <td>778</td>
+            </tr>
+            <tr id=4>
+                <td>São Paulo</td>
+                <td>Madeira</td>
+                <td>154</td>
+            </tr>
+        </tbody>
+        <!-- Rodapé da Tabela-->
+
+    </table><br><br><br><br>
+    Telefone: (00) 1234-5678<br> Email: clinicageralhtml@email.com <br>
+    <iframe summary="Localização da Clínica" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961.971311062642!2d-38.563684056072525!3d-3.8131781671404137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f8ebf8f0e9d%3A0xf1af52f563b2f073!2sCl%C3%ADnica%20e%20Espa%C3%A7o%20Sra%20H!5e0!3m2!1spt-BR!2sbr!4v1687009498351!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+    <!-- Aqui vai o seu rodapé -->
+</body>
+
+</html>
